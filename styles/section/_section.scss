@@ -1,0 +1,151 @@
+body{
+    background-color: $backgroundColor;
+    
+}
+
+li, button, a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+   
+    .navigation{
+        color: $headerTXTColor;
+        background-color: $navColor;
+        font-family: 'Gluten', sans-serif;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+        
+        a{
+            color: inherit;
+           
+        }
+
+       #logo{
+                width: 75px;
+                height:75px;
+                margin-top: -2px;
+                
+       }
+
+        ._navlinks{
+            display: flex;
+            flex-flow: row wrap;
+            padding: 25px;
+            margin: 20px;
+            gap:30px;
+            
+        }
+        
+
+        .logo{
+            display: flex;
+            margin: 20px;
+            gap: 20px;
+                p{
+                    align-self: center;
+                    font-size: 40px;
+                }
+
+                img{
+                    align-self: center;
+                
+                }
+        }
+
+        
+
+       
+    }
+
+    .bodysection{
+        display: flex;
+        color: $textcolor;
+        margin-top: 100px;
+        gap: 30px;
+        .animalcharacter{
+            border: solid 8px $textcolor;
+            border-radius: 40px;
+            background-color: $textboxColor;
+            margin: auto;
+            width: 525px;
+                height: 450px;
+            img{
+                width: 575px;
+                height: 455px;
+                margin-left: -25px;
+                position: absolute;
+            }
+        }
+        .textwrapper{
+            text-align: center;
+            display: flex;
+            margin-right: auto;  
+            margin-top: 15px;
+            gap: 50px;
+            flex-flow: column wrap;
+            width: 700px;
+            
+            .text1{
+                background-color: $textboxColor;
+                font-family: 'Merriweather Sans',sans-serif;
+                font-weight: 700;
+                font-size: 25px;
+                padding: 60px;
+                border: solid 8px $textcolor;
+                
+                
+            }
+            .text2{
+                font-family: 'Gluten', sans-serif;
+                background-color: $textboxColor;
+                font-size: 30px;
+                padding: 70px;
+                border: solid 8px $textcolor;
+            }
+        }
+    }
+
+    
+    
+.AboutMe{
+    color: $textcolor;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    .TopSection{
+        
+        .flower1{
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            left: 20px;
+        }
+        .flower2{
+            height: 300px;
+            width: 300px;
+            right: -15px;
+            top: 550px;
+            position: absolute;
+        }
+        .cloud1{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            img{
+                
+                height: 500px;
+                width: 700px;
+            }
+            p{
+                text-align: center;
+                position: absolute;
+                left: 425px;
+                top: 420px;
+                width: 500px;
+            }
+        }
+    }
+}
