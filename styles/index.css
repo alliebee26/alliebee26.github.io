@@ -48,6 +48,9 @@ li, button, a {
   font-size: 30px;
   display: flex;
   justify-content: space-between;
+  /*a:hover{
+
+  }*/
 }
 .navigation a {
   color: inherit;
@@ -121,17 +124,48 @@ li, button, a {
   padding: 70px;
   border: solid 8px #BF045B;
 }
+.bodysection .textwrapper .heartwrapper {
+  position: relative;
+}
+.bodysection .textwrapper .heartwrapper #heart1 {
+  position: absolute;
+  bottom: 5px;
+  left: -30px;
+}
+.bodysection .textwrapper .heartwrapper #heart2 {
+  position: absolute;
+  bottom: 5px;
+  left: 12px;
+  height: 30px;
+  width: 30px;
+}
+.bodysection .textwrapper .heartwrapper #heart3 {
+  position: absolute;
+  transform: scaleX(-1);
+  right: 2px;
+  bottom: 5px;
+}
+.bodysection .textwrapper .heartwrapper #undermain {
+  position: absolute;
+  height: 50px;
+  width: 500px;
+  bottom: -80px;
+  left: 15px;
+}
 
 .AboutMe {
   color: #BF045B;
   font-family: "Merriweather Sans", sans-serif;
   font-size: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .AboutMe .TopSection .flower1 {
-  height: 250px;
-  width: 250px;
+  height: 210px;
+  width: 210px;
   position: absolute;
   left: 20px;
+  top: 170px;
 }
 .AboutMe .TopSection .flower2 {
   height: 300px;
@@ -142,8 +176,8 @@ li, button, a {
 }
 .AboutMe .TopSection .cloud1 {
   margin-top: 100px;
-  display: flex;
-  justify-content: center;
+  margin-left: 325px;
+  margin-right: auto;
 }
 .AboutMe .TopSection .cloud1 img {
   height: 500px;
@@ -155,4 +189,325 @@ li, button, a {
   left: 425px;
   top: 420px;
   width: 500px;
+}
+.AboutMe .TopSection .arrow1 {
+  position: absolute;
+  left: 200px;
+  top: 500px;
+}
+
+.middleSection .yellow {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: -50px;
+  top: 700px;
+}
+.middleSection .CV {
+  margin-left: 50px;
+  margin-top: 150px;
+  width: 600px;
+  height: 700px;
+  border: #BF045B 10px solid;
+  background-color: #F2AEBB;
+}
+
+.bottomsection {
+  margin-right: auto;
+  margin-left: auto;
+  color: #BF045B;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 20px;
+}
+.bottomsection .cloudandcat p {
+  position: absolute;
+  width: 300px;
+  text-align: center;
+  left: 880px;
+  top: 1800px;
+}
+.bottomsection .cloudandcat #cloudcool {
+  height: 600px;
+  width: 600px;
+  margin-left: 750px;
+}
+.bottomsection .cloudandcat #catbody {
+  position: absolute;
+  z-index: -1;
+  left: 1020px;
+  top: 1460px;
+  width: 175px;
+  height: 300px;
+}
+.bottomsection .cloudandcat #catarms {
+  position: absolute;
+  left: 960px;
+  top: 1620px;
+  width: 300px;
+}
+.bottomsection .finalflower {
+  height: 260px;
+  width: 260px;
+  position: absolute;
+  bottom: -1500px;
+  left: 50px;
+}
+.bottomsection .socials {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.bottomsection .socials .social1 {
+  background-color: #BF045B;
+  width: 100px;
+  height: 100px;
+}
+.bottomsection .socials .social2 {
+  background-color: #BF045B;
+  width: 100px;
+  height: 100px;
+}
+.bottomsection .socials .social3 {
+  background-color: #BF045B;
+  width: 100px;
+  height: 100px;
+}
+.bottomsection .socialsandarrow {
+  position: relative;
+}
+.bottomsection .socialsandarrow #socialsDoodle {
+  position: absolute;
+  bottom: 200px;
+  left: 100px;
+}
+.bottomsection .socialsandarrow #arrow {
+  position: absolute;
+  bottom: 100px;
+  left: 300px;
+}
+
+.ParentProjects {
+  color: #BF045B;
+  font-family: "Gluten", sans-serif;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+.ParentProjects .set1 {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.ParentProjects .set1 .title1 {
+  background-color: #F2AEBB;
+  width: 1200px;
+  height: 60px;
+  padding: 16px;
+  align-self: flex-start;
+}
+.ParentProjects .set1 .project1 {
+  background-color: #F2AEBB;
+  height: 400px;
+  width: 300px;
+  margin-left: 100px;
+}
+.ParentProjects .set1 .project2 {
+  background-color: #F2AEBB;
+  height: 400px;
+  width: 300px;
+}
+.ParentProjects .set1 .project3 {
+  background-color: #F2AEBB;
+  height: 400px;
+  width: 300px;
+}
+.ParentProjects .set2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.ParentProjects .set2 .title2 {
+  background-color: #F2AEBB;
+  width: 1200px;
+  height: 60px;
+  padding: 16px;
+}
+.ParentProjects .set2 .project4 {
+  background-color: #F2AEBB;
+  height: 400px;
+  width: 300px;
+  margin-left: 100px;
+}
+.ParentProjects .set2 .project5 {
+  background-color: #F2AEBB;
+  height: 400px;
+  width: 300px;
+}
+.ParentProjects .set2 .project6 {
+  background-color: #F2AEBB;
+  height: 400px;
+  width: 300px;
+}
+.ParentProjects .set3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.ParentProjects .set3 .title3 {
+  background-color: #F2AEBB;
+  width: 1200px;
+  height: 60px;
+  padding: 16px;
+}
+.ParentProjects .set3 .project7 {
+  background-color: #F2AEBB;
+  height: 400px;
+  width: 300px;
+  margin-left: 100px;
+}
+.ParentProjects .set3 .project8 {
+  background-color: #F2AEBB;
+  height: 400px;
+  width: 300px;
+}
+.ParentProjects .set3 .project9 {
+  background-color: #F2AEBB;
+  height: 400px;
+  width: 300px;
+}
+
+.desktopVersion {
+  display: block;
+}
+
+.mobileVersion {
+  display: none;
+}
+
+@media screen and (max-width: 430px) {
+  .desktopVersion {
+    display: none;
+  }
+  .mobileVersion {
+    display: block;
+  }
+  .homepage .nav {
+    background-color: #8FD1D9;
+    padding: 20px;
+    display: flex;
+  }
+  .homepage .nav .logo2 {
+    height: 50px;
+    width: 50px;
+    justify-content: space-between;
+  }
+  .homepage .bodysection {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 50px;
+  }
+  .homepage .bodysection .animalcharacter {
+    border: solid 4px #BF045B;
+    border-radius: 40px;
+    background-color: #F2AEBB;
+    margin-left: 60px;
+    width: 300px;
+    height: 275px;
+    gap: 40px;
+  }
+  .homepage .bodysection .animalcharacter img {
+    width: 360px;
+    height: 290px;
+    position: absolute;
+  }
+  .homepage .bodysection .textwrapper {
+    text-align: center;
+    display: flex;
+    margin-top: 15px;
+    gap: 30px;
+  }
+  .homepage .bodysection .textwrapper .text1 {
+    font-weight: 700;
+    font-size: 15px;
+    padding: 20px;
+    border: solid 4px #BF045B;
+    width: 430px;
+  }
+  .homepage .bodysection .textwrapper .text2 {
+    font-family: "Gluten", sans-serif;
+    background-color: #F2AEBB;
+    font-size: 20px;
+    padding: 60px;
+    border: solid 4px #BF045B;
+    width: 430px;
+    margin-bottom: 40px;
+  }
+  .homepage .bodysection .textwrapper .heartwrapper2 {
+    position: relative;
+  }
+  .homepage .bodysection .textwrapper .heartwrapper2 #heart4 {
+    position: absolute;
+  }
+  .homepage .bodysection .textwrapper .heartwrapper2 #heart5 {
+    position: absolute;
+    bottom: 5px;
+    left: -30px;
+  }
+  .homepage .bodysection .textwrapper .heartwrapper2 #heart6 {
+    position: absolute;
+    transform: scaleX(-1);
+    bottom: 5px;
+    right: 5px;
+  }
+  .homepage .bodysection .textwrapper .heartwrapper2 #undermain {
+    position: absolute;
+    bottom: -85px;
+  }
+  .divider1 {
+    background-color: #8FD1D9;
+    margin: auto;
+    padding: 40px;
+  }
+  .divider1 p {
+    font-size: 30px;
+    font-family: "Gluten", sans-serif;
+    color: #F5F4EC;
+    text-align: center;
+  }
+  .AboutME .TopSection {
+    position: relative;
+  }
+  .AboutME .TopSection .flower1 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    right: -20px;
+    top: -50px;
+  }
+  .AboutME .TopSection .cloud1 {
+    position: relative;
+  }
+  .AboutME .TopSection .cloud1 .firsttxt {
+    padding: 30px;
+    background-color: #F5F4EC;
+    z-index: -1;
+    position: absolute;
+  }
+  .AboutME .TopSection .cloud1 .firsttxt p {
+    font-size: 15px;
+    color: #BF045B;
+    font-family: "Merriweather Sans", sans-serif;
+    text-align: center;
+  }
+  .AboutME .TopSection .cloud1 img {
+    width: 320px;
+    height: 320px;
+    border-radius: 30%;
+    margin: auto;
+    z-index: -2;
+  }
 }/*# sourceMappingURL=index.css.map */

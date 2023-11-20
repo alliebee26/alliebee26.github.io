@@ -1,0 +1,164 @@
+@media screen and (max-width: 430px){
+    .desktopVersion{
+        display: none;
+    }
+    .mobileVersion{
+        display: block;
+    }
+
+    .homepage{
+        .nav{
+            background-color: $navColor;
+            padding: 20px;
+            display: flex;
+            .logo2{
+                height: 50px;
+                width: 50px;
+                //margin: auto;
+                justify-content: space-between;
+            }
+
+        }
+
+        .bodysection{
+            display: flex;
+            flex-flow: column wrap;
+            margin-top: 50px;
+            .animalcharacter{
+                border: solid 4px $textcolor;
+                border-radius: 40px;
+                background-color: $textboxColor;
+                margin-left: 60px;
+                width: 300px;
+                height: 275px;
+                gap: 40px;
+            img{
+                width: 360px;
+                height: 290px;
+                position: absolute;
+
+            }
+            }
+
+            .textwrapper{
+                text-align: center;
+                display: flex;  
+                margin-top: 15px;
+                gap: 30px;
+                
+                .text1{
+                    
+                    font-weight: 700;
+                    font-size: 15px;
+                    padding: 20px;
+                    border: solid 4px $textcolor;
+                    width: 430px;
+                    
+                }
+                .text2{
+                    font-family: 'Gluten', sans-serif;
+                    background-color: $textboxColor;
+                    font-size: 20px;
+                    padding: 60px;
+                    border: solid 4px $textcolor;
+                    width: 430px;
+                    margin-bottom: 40px;
+                }
+    
+            .heartwrapper2{
+                position: relative;
+                #heart4{
+                    position: absolute;
+                    
+            
+                }
+    
+                #heart5{
+                    position: absolute;
+                   bottom: 5px;
+                   left: -30px;
+                    
+                }
+    
+                #heart6{
+                    position: absolute;
+                    transform: scaleX(-1);
+                    bottom: 5px;
+                    right: 5px;
+                   
+                }
+
+                #undermain{
+                    position: absolute;
+                    bottom: -85px;
+                }
+            }
+        }
+        }
+    }
+
+    .divider1{
+        background-color: $navColor;
+        margin: auto;
+        padding: 40px;
+        p{
+            font-size: 30px;
+            font-family: 'Gluten', sans-serif;
+            color: $headerTXTColor;
+            text-align: center;
+        }
+    }
+
+    .AboutME{
+        .TopSection{
+            position: relative;
+            .flower1{
+                position: absolute;
+                height: 150px;
+                width: 150px;
+                right: -20px;
+                top: -50px;
+            }
+
+           
+
+            .cloud1{
+                position: relative;
+                .firsttxt{
+                    padding: 30px;
+                    background-color: $headerTXTColor;
+                    z-index: -1;
+                    position: absolute;
+                    
+                    p{
+                    font-size: 15px;
+                    color: $textcolor;
+                    font-family: "Merriweather Sans", sans-serif;
+                    text-align: center;
+                    }
+                }
+
+                img{
+                    width: 320px;
+                    height: 320px;
+                    border-radius: 30%;
+                    margin: auto;
+                    z-index: -2;
+                }
+
+            }
+
+
+            .flower2{
+
+            }
+        }
+    }
+
+
+
+
+
+
+
+    }

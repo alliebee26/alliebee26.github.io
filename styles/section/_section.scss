@@ -24,6 +24,11 @@ li, button, a{
            
         }
 
+        /*a:hover{
+
+        }*/
+       
+
        #logo{
                 width: 75px;
                 height:75px;
@@ -106,6 +111,39 @@ li, button, a{
                 padding: 70px;
                 border: solid 8px $textcolor;
             }
+
+        .heartwrapper{
+            position: relative;
+            #heart1{
+                position: absolute;
+                bottom: 5px;
+                left: -30px;
+        
+            }
+
+            #heart2{
+                position: absolute;
+                bottom: 5px;
+                left: 12px;
+                height: 30px;
+                width: 30px;
+            }
+
+            #heart3{
+                position: absolute;
+                transform: scaleX(-1);
+                right: 2px;
+                bottom: 5px;
+            }
+
+            #undermain{
+                position: absolute;
+                height: 50px;
+                width: 500px;
+                bottom: -80px;
+                left: 15px;
+            }
+        }
         }
     }
 
@@ -115,13 +153,16 @@ li, button, a{
     color: $textcolor;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 20px;
+    margin-right: auto;
+    margin-left:auto;
     .TopSection{
         
         .flower1{
-            height: 250px;
-            width: 250px;
+            height: 210px;
+            width: 210px;
             position: absolute;
             left: 20px;
+            top: 170px;
         }
         .flower2{
             height: 300px;
@@ -132,20 +173,249 @@ li, button, a{
         }
         .cloud1{
             margin-top: 100px;
-            display: flex;
-            justify-content: center;
+            margin-left: 325px;
+            margin-right: auto;
+            
             img{
                 
                 height: 500px;
                 width: 700px;
+                //position: absolute;
             }
             p{
                 text-align: center;
                 position: absolute;
+                
                 left: 425px;
                 top: 420px;
                 width: 500px;
             }
         }
+
+        .arrow1{
+            position: absolute;
+            left: 200px;
+            top: 500px;
+        }
     }
 }
+
+.middleSection{
+    .yellow{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: -50px;
+        top: 700px;
+    }
+    .CV{
+        margin-left: 50px;
+        margin-top: 150px;
+        width: 600px;
+        height: 700px;
+        border: $textcolor 10px solid;
+        background-color: $textboxColor;
+    }
+}
+
+
+.bottomsection{
+    margin-right: auto;
+    margin-left: auto;
+    color: $textcolor;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    .cloudandcat{
+        p{
+            position: absolute;
+            width: 300px;
+            text-align: center;
+            left: 880px;
+            top: 1800px;
+        }
+        #cloudcool{
+            height: 600px;
+            width: 600px;
+            margin-left: 750px;
+            //margin-top: px;
+        }
+        #catbody{
+            position: absolute;
+            z-index: -1;
+            left: 1020px;
+            top: 1460px;
+            width: 175px;
+            height: 300px;
+        }
+        #catarms{
+            position: absolute;
+            left: 960px;
+            top: 1620px;
+            width: 300px;
+        }
+    }
+
+    .finalflower{
+        height: 260px;
+        width: 260px;
+        position: absolute;
+        bottom: -1500px;
+        left: 50px;  
+    }
+
+    .socials{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        margin-bottom: 30px;
+        .social1{
+            background-color: $textcolor;
+            width: 100px;
+            height: 100px;
+        }
+        .social2{
+            background-color: $textcolor;
+            width: 100px;
+            height: 100px;
+        }
+        .social3{
+            background-color: $textcolor;
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .socialsandarrow{
+        position: relative;
+        #socialsDoodle{
+            position: absolute;
+            bottom: 200px;
+            left: 100px;
+        }
+
+        #arrow{
+            position: absolute;
+            bottom: 100px;
+            left: 300px;
+        }
+    }
+}
+
+
+
+.ParentProjects{
+    //display: flex;
+    color: $textcolor;
+    font-family: 'Gluten', sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 100px;
+    
+    .set1{
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        .title1{
+            background-color: $textboxColor;
+            width: 1200px;
+            height: 60px;
+            padding: 16px;
+            align-self: flex-start;
+        }
+        .project1{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+            margin-left: 100px;
+        }
+
+        .project2{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+            //justify-self: center;
+        }
+
+        .project3{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+            
+        }
+    }
+    .set2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        
+        margin-bottom: 50px;
+        .title2{
+            background-color: $textboxColor;
+            width: 1200px;
+            height: 60px;
+            padding: 16px;
+        }
+        .project4{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+            margin-left: 100px;
+        }
+
+        .project5{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+        }
+
+        .project6{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;  
+        }
+    }
+    .set3{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        
+        margin-bottom: 50px;
+        .title3{
+            background-color: $textboxColor;
+            width: 1200px;
+            height: 60px;
+            padding: 16px;
+        }
+        .project7{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+            margin-left: 100px;
+        }
+
+        .project8{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+        }
+
+        .project9{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+        }
+    }
+}
+
+.desktopVersion{
+    display: block;
+}
+.mobileVersion{
+    display: none;
+}
+
+
+
+    
+
