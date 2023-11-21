@@ -20,13 +20,13 @@ li, button, a{
         justify-content: space-between;
         
         a{
-            color: inherit;
-           
+        color: inherit;
         }
 
-        /*a:hover{
-
-        }*/
+        a:hover{
+            
+            
+        }
        
 
        #logo{
@@ -201,12 +201,14 @@ li, button, a{
 }
 
 .middleSection{
+    position: relative;
     .yellow{
         height: 200px;
         width: 200px;
         position: absolute;
         left: -50px;
-        top: 700px;
+        top: -100px;
+        z-index: 1;
     }
     .CV{
         margin-left: 50px;
@@ -215,6 +217,26 @@ li, button, a{
         height: 700px;
         border: $textcolor 10px solid;
         background-color: $textboxColor;
+        position: relative;
+        .embedPDF{
+            position: absolute;
+            //width: 500;
+            //height: 700;
+            top: 40px;
+            left: 40px;
+        }
+    }
+
+    .image{
+        height: 500px;
+        width: 500px;
+        //border-radius: 40px;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        img{
+            border-radius: 20%;
+        }
     }
 }
 
@@ -328,6 +350,13 @@ li, button, a{
             height: 400px;
             width: 300px;
             margin-left: 100px;
+            .Robots{
+                display: none;
+                
+            }
+            .project1:hover + .Robots{
+                 display: block;
+            }
         }
 
         .project2{
@@ -392,6 +421,7 @@ li, button, a{
             height: 400px;
             width: 300px;
             margin-left: 100px;
+            
         }
 
         .project8{

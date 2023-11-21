@@ -48,9 +48,6 @@ li, button, a {
   font-size: 30px;
   display: flex;
   justify-content: space-between;
-  /*a:hover{
-
-  }*/
 }
 .navigation a {
   color: inherit;
@@ -196,12 +193,16 @@ li, button, a {
   top: 500px;
 }
 
+.middleSection {
+  position: relative;
+}
 .middleSection .yellow {
   height: 200px;
   width: 200px;
   position: absolute;
   left: -50px;
-  top: 700px;
+  top: -100px;
+  z-index: 1;
 }
 .middleSection .CV {
   margin-left: 50px;
@@ -210,6 +211,22 @@ li, button, a {
   height: 700px;
   border: #BF045B 10px solid;
   background-color: #F2AEBB;
+  position: relative;
+}
+.middleSection .CV .embedPDF {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.middleSection .image {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+.middleSection .image img {
+  border-radius: 20%;
 }
 
 .bottomsection {
@@ -313,6 +330,12 @@ li, button, a {
   width: 300px;
   margin-left: 100px;
 }
+.ParentProjects .set1 .project1 .Robots {
+  display: none;
+}
+.ParentProjects .set1 .project1 .project1:hover + .Robots {
+  display: block;
+}
 .ParentProjects .set1 .project2 {
   background-color: #F2AEBB;
   height: 400px;
@@ -404,6 +427,10 @@ li, button, a {
     height: 50px;
     width: 50px;
     justify-content: space-between;
+  }
+  .homepage .nav .hamburger {
+    margin-left: 300px;
+    color: green;
   }
   .homepage .bodysection {
     display: flex;
