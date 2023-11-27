@@ -52,6 +52,19 @@ li, button, a {
 .navigation a {
   color: inherit;
 }
+.navigation .hamburgermenu {
+  display: none;
+}
+.navigation .bar {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 7px;
+  margin: 10px auto;
+  background-color: #F5F4EC;
+  margin-right: 30px;
+  top: 10px;
+}
 .navigation #logo {
   width: 75px;
   height: 75px;
@@ -150,6 +163,256 @@ li, button, a {
   left: 15px;
 }
 
+@media screen and (max-width: 430px) {
+  .navigation {
+    width: 430px;
+  }
+  .navigation .logo #logo {
+    height: 50px;
+    width: 50px;
+  }
+  .navigation ._navlinks {
+    display: none;
+  }
+  .navigation #name {
+    display: none;
+  }
+  .navigation .hamburgermenu {
+    display: block;
+    cursor: pointer;
+  }
+  .bodysection {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 50px;
+  }
+  .bodysection .animalcharacter {
+    border: solid 4px #BF045B;
+    border-radius: 40px;
+    background-color: #F2AEBB;
+    margin-left: 60px;
+    width: 300px;
+    height: 275px;
+    gap: 40px;
+  }
+  .bodysection .animalcharacter img {
+    width: 360px;
+    height: 290px;
+    position: absolute;
+  }
+  .bodysection .textwrapper {
+    text-align: center;
+    display: flex;
+    margin-top: 15px;
+    gap: 30px;
+  }
+  .bodysection .textwrapper .text1 {
+    font-weight: 700;
+    font-size: 15px;
+    padding: 20px;
+    border: solid 4px #BF045B;
+    width: 430px;
+  }
+  .bodysection .textwrapper .text2 {
+    font-family: "Gluten", sans-serif;
+    background-color: #F2AEBB;
+    font-size: 20px;
+    padding: 60px;
+    border: solid 4px #BF045B;
+    width: 430px;
+    margin-bottom: 40px;
+  }
+  .bodysection .textwrapper .heartwrapper2 {
+    position: relative;
+  }
+  .bodysection .textwrapper .heartwrapper2 #heart4 {
+    position: absolute;
+  }
+  .bodysection .textwrapper .heartwrapper2 #heart5 {
+    position: absolute;
+    bottom: 5px;
+    left: -30px;
+  }
+  .bodysection .textwrapper .heartwrapper2 #heart6 {
+    position: absolute;
+    transform: scaleX(-1);
+    bottom: 5px;
+    right: 5px;
+  }
+  .bodysection .textwrapper .heartwrapper2 #undermain {
+    position: absolute;
+    bottom: -85px;
+  }
+}
+/*@media screen and (max-width: 430px){
+    .desktopVersion{
+        display: none;
+    }
+    .mobileVersion{
+        display: block;
+    }
+
+    .homepage{
+        .nav{
+            background-color: $navColor;
+            padding: 20px;
+            display: flex;
+            .logo2{
+                height: 50px;
+                width: 50px;
+                //margin: auto;
+                justify-content: space-between;
+            }
+
+            .hamburger{
+                margin-left: 300px;
+                color: green;
+            }
+
+        }
+
+        .bodysection{
+            display: flex;
+            flex-flow: column wrap;
+            margin-top: 50px;
+            .animalcharacter{
+                border: solid 4px $textcolor;
+                border-radius: 40px;
+                background-color: $textboxColor;
+                margin-left: 60px;
+                width: 300px;
+                height: 275px;
+                gap: 40px;
+            img{
+                width: 360px;
+                height: 290px;
+                position: absolute;
+
+            }
+            }
+
+            .textwrapper{
+                text-align: center;
+                display: flex;  
+                margin-top: 15px;
+                gap: 30px;
+
+                .text1{
+
+                    font-weight: 700;
+                    font-size: 15px;
+                    padding: 20px;
+                    border: solid 4px $textcolor;
+                    width: 430px;
+
+                }
+                .text2{
+                    font-family: 'Gluten', sans-serif;
+                    background-color: $textboxColor;
+                    font-size: 20px;
+                    padding: 60px;
+                    border: solid 4px $textcolor;
+                    width: 430px;
+                    margin-bottom: 40px;
+                }
+
+            .heartwrapper2{
+                position: relative;
+                #heart4{
+                    position: absolute;
+
+
+                }
+
+                #heart5{
+                    position: absolute;
+                   bottom: 5px;
+                   left: -30px;
+
+                }
+
+                #heart6{
+                    position: absolute;
+                    transform: scaleX(-1);
+                    bottom: 5px;
+                    right: 5px;
+
+                }
+
+                #undermain{
+                    position: absolute;
+                    bottom: -85px;
+                }
+            }
+        }
+        }
+    }
+
+    .divider1{
+        background-color: $navColor;
+        margin: auto;
+        padding: 40px;
+        p{
+            font-size: 30px;
+            font-family: 'Gluten', sans-serif;
+            color: $headerTXTColor;
+            text-align: center;
+        }
+    }
+
+    .AboutME{
+        .TopSection{
+            position: relative;
+            .flower1{
+                position: absolute;
+                height: 150px;
+                width: 150px;
+                right: -20px;
+                top: -50px;
+            }
+
+
+
+            .cloud1{
+                position: relative;
+                .firsttxt{
+                    padding: 30px;
+                    background-color: $headerTXTColor;
+                    z-index: -1;
+                    position: absolute;
+
+                    p{
+                    font-size: 15px;
+                    color: $textcolor;
+                    font-family: "Merriweather Sans", sans-serif;
+                    text-align: center;
+                    }
+                }
+
+                img{
+                    width: 320px;
+                    height: 320px;
+                    border-radius: 30%;
+                    margin: auto;
+                    z-index: -2;
+                }
+
+            }
+
+
+            .flower2{
+
+            }
+        }
+    }
+
+
+
+
+
+
+
+    }*/
 .AboutMe {
   color: #BF045B;
   font-family: "Merriweather Sans", sans-serif;
@@ -304,6 +567,185 @@ li, button, a {
   left: 300px;
 }
 
+@media screen and (max-width: 430px) {
+  .navigation {
+    width: 430px;
+  }
+  .navigation .logo #logo {
+    height: 50px;
+    width: 50px;
+  }
+  .navigation ._navlinks {
+    display: none;
+  }
+  .navigation #name {
+    display: none;
+  }
+  .navigation .hamburgermenu {
+    display: block;
+  }
+  .AboutMe .TopSection {
+    position: relative;
+  }
+  .AboutMe .TopSection .arrow1 {
+    display: none;
+  }
+  .AboutMe .TopSection .flower2 {
+    display: none;
+  }
+  .AboutMe .TopSection .flower1 {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    left: -3px;
+    top: 1000px;
+    z-index: 1;
+  }
+  .AboutMe .TopSection .cloud1 {
+    position: relative;
+  }
+  .AboutMe .TopSection .cloud1 #text1 {
+    position: absolute;
+    padding: 30px;
+    background-color: #F5F4EC;
+    z-index: 3;
+    top: 270px;
+    left: -270px;
+    font-size: 15px;
+    color: #BF045B;
+    font-family: "Merriweather Sans", sans-serif;
+    text-align: center;
+    width: 300px;
+    border-radius: 20%;
+    border: solid 8px #F2AEBB;
+  }
+  .AboutMe .TopSection .cloud1 #CloudImage {
+    display: none;
+  }
+  .middleSection #iF {
+    display: none;
+  }
+  .middleSection .yellow {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: 300px;
+    top: -150px;
+    z-index: 1;
+  }
+  .middleSection .CV {
+    margin-top: 150px;
+    width: 600px;
+    height: 450px;
+    border: #BF045B 10px solid;
+    background-color: #F2AEBB;
+    position: relative;
+    left: -100px;
+    top: 500px;
+    margin-bottom: 30px;
+  }
+  .middleSection .CV .embedPDF {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+  .middleSection .CV .embedPDF #clickable {
+    position: absolute;
+    background-color: #F5F4EC;
+    left: 140px;
+    top: 300px;
+    border: solid 4px #BF045B;
+    width: 150px;
+    height: 50px;
+    font-family: "Gluten", sans-serif;
+    color: #BF045B;
+    text-align: center;
+    padding: 15px;
+  }
+  .middleSection .CV .embedPDF #PDFImage {
+    position: relative;
+    left: 60px;
+    width: 300px;
+    height: 300px;
+    top: -20px;
+  }
+  .middleSection .image {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: -90px;
+    left: 60px;
+  }
+  .middleSection .image img {
+    border-radius: 80%;
+  }
+  .bottomsection {
+    margin-right: auto;
+    margin-left: auto;
+    color: #BF045B;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 20px;
+  }
+  .bottomsection .socialsandarrow {
+    display: none;
+  }
+  .bottomsection #cloudcool {
+    display: none;
+  }
+  .bottomsection #text2 {
+    left: 20px;
+  }
+  .bottomsection #catbody {
+    display: none;
+  }
+  .bottomsection #catarms {
+    display: none;
+  }
+  .bottomsection .cloudandcat {
+    position: relative;
+  }
+  .bottomsection .cloudandcat p {
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    background-color: #F5F4EC;
+    border-radius: 20%;
+    padding: 30px;
+    top: 550px;
+    margin-left: -3px;
+    border: solid 8px #F2AEBB;
+    padding-bottom: 30px;
+  }
+  .bottomsection .finalflower {
+    display: none;
+  }
+  .bottomsection .socials {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: -1350px;
+    left: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .bottomsection .socials .social1 {
+    background-color: #BF045B;
+    width: 100px;
+    height: 100px;
+  }
+  .bottomsection .socials .social2 {
+    background-color: #BF045B;
+    width: 100px;
+    height: 100px;
+  }
+  .bottomsection .socials .social3 {
+    background-color: #BF045B;
+    width: 100px;
+    height: 100px;
+  }
+}
 .ParentProjects {
   color: #BF045B;
   font-family: "Gluten", sans-serif;
@@ -317,6 +759,27 @@ li, button, a {
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
+.ParentProjects .set1 .project1:hover, .ParentProjects .set1 .project2:hover, .ParentProjects .set1 .project3:hover {
+  background-color: #BF045B;
+}
+.ParentProjects .set1 .project1:hover .Robots, .ParentProjects .set1 .project2:hover .Robots, .ParentProjects .set1 .project3:hover .Robots {
+  display: block;
+  color: #F5F4EC;
+}
+.ParentProjects .set1 .project1:hover .SecondBit, .ParentProjects .set1 .project2:hover .SecondBit, .ParentProjects .set1 .project3:hover .SecondBit {
+  display: block;
+}
+.ParentProjects .set1 .Robots {
+  display: none;
+  text-align: center;
+  margin-top: 150px;
+}
+.ParentProjects .set1 .SecondBit {
+  display: none;
+  font-size: 20px;
+  color: #F5F4EC;
+  text-align: center;
+}
 .ParentProjects .set1 .title1 {
   background-color: #F2AEBB;
   width: 1200px;
@@ -329,12 +792,6 @@ li, button, a {
   height: 400px;
   width: 300px;
   margin-left: 100px;
-}
-.ParentProjects .set1 .project1 .Robots {
-  display: none;
-}
-.ParentProjects .set1 .project1 .project1:hover + .Robots {
-  display: block;
 }
 .ParentProjects .set1 .project2 {
   background-color: #F2AEBB;
@@ -401,140 +858,4 @@ li, button, a {
   background-color: #F2AEBB;
   height: 400px;
   width: 300px;
-}
-
-.desktopVersion {
-  display: block;
-}
-
-.mobileVersion {
-  display: none;
-}
-
-@media screen and (max-width: 430px) {
-  .desktopVersion {
-    display: none;
-  }
-  .mobileVersion {
-    display: block;
-  }
-  .homepage .nav {
-    background-color: #8FD1D9;
-    padding: 20px;
-    display: flex;
-  }
-  .homepage .nav .logo2 {
-    height: 50px;
-    width: 50px;
-    justify-content: space-between;
-  }
-  .homepage .nav .hamburger {
-    margin-left: 300px;
-    color: green;
-  }
-  .homepage .bodysection {
-    display: flex;
-    flex-flow: column wrap;
-    margin-top: 50px;
-  }
-  .homepage .bodysection .animalcharacter {
-    border: solid 4px #BF045B;
-    border-radius: 40px;
-    background-color: #F2AEBB;
-    margin-left: 60px;
-    width: 300px;
-    height: 275px;
-    gap: 40px;
-  }
-  .homepage .bodysection .animalcharacter img {
-    width: 360px;
-    height: 290px;
-    position: absolute;
-  }
-  .homepage .bodysection .textwrapper {
-    text-align: center;
-    display: flex;
-    margin-top: 15px;
-    gap: 30px;
-  }
-  .homepage .bodysection .textwrapper .text1 {
-    font-weight: 700;
-    font-size: 15px;
-    padding: 20px;
-    border: solid 4px #BF045B;
-    width: 430px;
-  }
-  .homepage .bodysection .textwrapper .text2 {
-    font-family: "Gluten", sans-serif;
-    background-color: #F2AEBB;
-    font-size: 20px;
-    padding: 60px;
-    border: solid 4px #BF045B;
-    width: 430px;
-    margin-bottom: 40px;
-  }
-  .homepage .bodysection .textwrapper .heartwrapper2 {
-    position: relative;
-  }
-  .homepage .bodysection .textwrapper .heartwrapper2 #heart4 {
-    position: absolute;
-  }
-  .homepage .bodysection .textwrapper .heartwrapper2 #heart5 {
-    position: absolute;
-    bottom: 5px;
-    left: -30px;
-  }
-  .homepage .bodysection .textwrapper .heartwrapper2 #heart6 {
-    position: absolute;
-    transform: scaleX(-1);
-    bottom: 5px;
-    right: 5px;
-  }
-  .homepage .bodysection .textwrapper .heartwrapper2 #undermain {
-    position: absolute;
-    bottom: -85px;
-  }
-  .divider1 {
-    background-color: #8FD1D9;
-    margin: auto;
-    padding: 40px;
-  }
-  .divider1 p {
-    font-size: 30px;
-    font-family: "Gluten", sans-serif;
-    color: #F5F4EC;
-    text-align: center;
-  }
-  .AboutME .TopSection {
-    position: relative;
-  }
-  .AboutME .TopSection .flower1 {
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    right: -20px;
-    top: -50px;
-  }
-  .AboutME .TopSection .cloud1 {
-    position: relative;
-  }
-  .AboutME .TopSection .cloud1 .firsttxt {
-    padding: 30px;
-    background-color: #F5F4EC;
-    z-index: -1;
-    position: absolute;
-  }
-  .AboutME .TopSection .cloud1 .firsttxt p {
-    font-size: 15px;
-    color: #BF045B;
-    font-family: "Merriweather Sans", sans-serif;
-    text-align: center;
-  }
-  .AboutME .TopSection .cloud1 img {
-    width: 320px;
-    height: 320px;
-    border-radius: 30%;
-    margin: auto;
-    z-index: -2;
-  }
 }/*# sourceMappingURL=index.css.map */

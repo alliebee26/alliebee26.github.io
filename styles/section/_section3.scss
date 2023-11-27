@@ -1,0 +1,138 @@
+.ParentProjects{
+    //display: flex;
+    color: $textcolor;
+    font-family: 'Gluten', sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 100px;
+    
+    .set1{
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        .project1:hover, .project2:hover, .project3:hover{
+            background-color: $textcolor;
+            .Robots{
+                display: block;
+                color: $headerTXTColor;
+                
+            }
+
+            .SecondBit{
+                display: block;
+            }
+       }
+
+       .Robots{
+        display: none;
+        
+        text-align: center;
+        margin-top: 150px;
+        
+    }
+
+    .SecondBit{
+        display: none;
+        font-size: 20px;
+        color: $headerTXTColor;
+        text-align: center;
+    }
+
+       
+        .title1{
+            background-color: $textboxColor;
+            width: 1200px;
+            height: 60px;
+            padding: 16px;
+            align-self: flex-start;
+        }
+        .project1{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+            margin-left: 100px;
+            
+            
+
+            
+        }
+
+        .project2{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+            //justify-self: center;
+        }
+
+        .project3{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+            
+        }
+    }
+    .set2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        
+        margin-bottom: 50px;
+        .title2{
+            background-color: $textboxColor;
+            width: 1200px;
+            height: 60px;
+            padding: 16px;
+        }
+        .project4{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+            margin-left: 100px;
+        }
+
+        .project5{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+        }
+
+        .project6{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;  
+        }
+    }
+    .set3{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        
+        margin-bottom: 50px;
+        .title3{
+            background-color: $textboxColor;
+            width: 1200px;
+            height: 60px;
+            padding: 16px;
+        }
+        .project7{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+            margin-left: 100px;
+            
+        }
+
+        .project8{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+        }
+
+        .project9{
+            background-color: $textboxColor;
+            height: 400px;
+            width: 300px;
+        }
+    }
+}

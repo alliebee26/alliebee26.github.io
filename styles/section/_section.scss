@@ -28,6 +28,25 @@ li, button, a{
             
         }
        
+        .hamburgermenu{
+            display: none;
+           
+        }
+
+        
+
+        .bar{
+            position: relative;
+            display: block;
+            width: 40px;
+            height: 7px;
+            margin: 10px auto;
+            background-color: $headerTXTColor;
+            margin-right: 30px;
+            top: 10px;
+            
+            
+        }
 
        #logo{
                 width: 75px;
@@ -62,7 +81,7 @@ li, button, a{
         }
 
         
-
+       
        
     }
 
@@ -71,19 +90,26 @@ li, button, a{
         color: $textcolor;
         margin-top: 100px;
         gap: 30px;
+        
+        
         .animalcharacter{
             border: solid 8px $textcolor;
             border-radius: 40px;
             background-color: $textboxColor;
             margin: auto;
             width: 525px;
-                height: 450px;
+            height: 450px;
+
+          
             img{
                 width: 575px;
                 height: 455px;
                 margin-left: -25px;
                 position: absolute;
+                
             }
+
+            
         }
         .textwrapper{
             text-align: center;
@@ -147,303 +173,132 @@ li, button, a{
         }
     }
 
-    
-    
-.AboutMe{
-    color: $textcolor;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 20px;
-    margin-right: auto;
-    margin-left:auto;
-    .TopSection{
-        
-        .flower1{
-            height: 210px;
-            width: 210px;
-            position: absolute;
-            left: 20px;
-            top: 170px;
-        }
-        .flower2{
-            height: 300px;
-            width: 300px;
-            right: -15px;
-            top: 550px;
-            position: absolute;
-        }
-        .cloud1{
-            margin-top: 100px;
-            margin-left: 325px;
-            margin-right: auto;
+
+    @media screen and (max-width: 430px){
+        .navigation{
             
-            img{
-                
-                height: 500px;
-                width: 700px;
-                //position: absolute;
-            }
-            p{
-                text-align: center;
-                position: absolute;
-                
-                left: 425px;
-                top: 420px;
-                width: 500px;
-            }
-        }
-
-        .arrow1{
-            position: absolute;
-            left: 200px;
-            top: 500px;
-        }
-    }
-}
-
-.middleSection{
-    position: relative;
-    .yellow{
-        height: 200px;
-        width: 200px;
-        position: absolute;
-        left: -50px;
-        top: -100px;
-        z-index: 1;
-    }
-    .CV{
-        margin-left: 50px;
-        margin-top: 150px;
-        width: 600px;
-        height: 700px;
-        border: $textcolor 10px solid;
-        background-color: $textboxColor;
-        position: relative;
-        .embedPDF{
-            position: absolute;
-            //width: 500;
-            //height: 700;
-            top: 40px;
-            left: 40px;
-        }
-    }
-
-    .image{
-        height: 500px;
-        width: 500px;
-        //border-radius: 40px;
-        position: absolute;
-        top: 40px;
-        right: 50px;
-        img{
-            border-radius: 20%;
-        }
-    }
-}
-
-
-.bottomsection{
-    margin-right: auto;
-    margin-left: auto;
-    color: $textcolor;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 20px;
-    .cloudandcat{
-        p{
-            position: absolute;
-            width: 300px;
-            text-align: center;
-            left: 880px;
-            top: 1800px;
-        }
-        #cloudcool{
-            height: 600px;
-            width: 600px;
-            margin-left: 750px;
-            //margin-top: px;
-        }
-        #catbody{
-            position: absolute;
-            z-index: -1;
-            left: 1020px;
-            top: 1460px;
-            width: 175px;
-            height: 300px;
-        }
-        #catarms{
-            position: absolute;
-            left: 960px;
-            top: 1620px;
-            width: 300px;
-        }
-    }
-
-    .finalflower{
-        height: 260px;
-        width: 260px;
-        position: absolute;
-        bottom: -1500px;
-        left: 50px;  
-    }
-
-    .socials{
-        display: flex;
-        gap: 40px;
-        justify-content: center;
-        margin-bottom: 30px;
-        .social1{
-            background-color: $textcolor;
-            width: 100px;
-            height: 100px;
-        }
-        .social2{
-            background-color: $textcolor;
-            width: 100px;
-            height: 100px;
-        }
-        .social3{
-            background-color: $textcolor;
-            width: 100px;
-            height: 100px;
-        }
-    }
-
-    .socialsandarrow{
-        position: relative;
-        #socialsDoodle{
-            position: absolute;
-            bottom: 200px;
-            left: 100px;
-        }
-
-        #arrow{
-            position: absolute;
-            bottom: 100px;
-            left: 300px;
-        }
-    }
-}
-
-
-
-.ParentProjects{
-    //display: flex;
-    color: $textcolor;
-    font-family: 'Gluten', sans-serif;
-    font-size: 30px;
-    margin-top: 40px;
-    margin-left: 100px;
+                //background-color: $navColor;
+                width: 430px;
+                .logo{
+                    #logo{
+                    height: 50px;
+                    width: 50px;
+                    }
+                }
     
-    .set1{
-        display: flex;
-        gap: 50px;
-        flex-wrap: wrap;
-        margin-bottom: 50px;
-        .title1{
-            background-color: $textboxColor;
-            width: 1200px;
-            height: 60px;
-            padding: 16px;
-            align-self: flex-start;
-        }
-        .project1{
-            background-color: $textboxColor;
-            height: 400px;
-            width: 300px;
-            margin-left: 100px;
-            .Robots{
+            ._navlinks{
                 display: none;
                 
             }
-            .project1:hover + .Robots{
-                 display: block;
+
+            #name{
+                display: none;
             }
-        }
 
-        .project2{
-            background-color: $textboxColor;
-            height: 400px;
-            width: 300px;
-            //justify-self: center;
-        }
+            .hamburgermenu{
+                display: block;
+                cursor: pointer;
+            }
 
-        .project3{
-            background-color: $textboxColor;
-            height: 400px;
-            width: 300px;
             
-        }
-    }
-    .set2{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 50px;
-        
-        margin-bottom: 50px;
-        .title2{
-            background-color: $textboxColor;
-            width: 1200px;
-            height: 60px;
-            padding: 16px;
-        }
-        .project4{
-            background-color: $textboxColor;
-            height: 400px;
-            width: 300px;
-            margin-left: 100px;
-        }
+   
 
-        .project5{
-            background-color: $textboxColor;
-            height: 400px;
-            width: 300px;
-        }
-
-        .project6{
-            background-color: $textboxColor;
-            height: 400px;
-            width: 300px;  
-        }
-    }
-    .set3{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 50px;
-        
-        margin-bottom: 50px;
-        .title3{
-            background-color: $textboxColor;
-            width: 1200px;
-            height: 60px;
-            padding: 16px;
-        }
-        .project7{
-            background-color: $textboxColor;
-            height: 400px;
-            width: 300px;
-            margin-left: 100px;
             
         }
 
-        .project8{
-            background-color: $textboxColor;
-            height: 400px;
-            width: 300px;
-        }
 
-        .project9{
+        .bodysection{
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 50px;
+        
+        .animalcharacter{
+            border: solid 4px $textcolor;
+            border-radius: 40px;
             background-color: $textboxColor;
-            height: 400px;
+            margin-left: 60px;
             width: 300px;
+            height: 275px;
+            gap: 40px;
+        
+        img{
+            width: 360px;
+            height: 290px;
+            position: absolute;
         }
+    }
+
+
+
+    .textwrapper{
+        text-align: center;
+                display: flex;  
+                margin-top: 15px;
+                gap: 30px;
+                
+                .text1{
+                    
+                    font-weight: 700;
+                    font-size: 15px;
+                    padding: 20px;
+                    border: solid 4px $textcolor;
+                    width: 430px;
+                    
+                }
+                .text2{
+                    font-family: 'Gluten', sans-serif;
+                    background-color: $textboxColor;
+                    font-size: 20px;
+                    padding: 60px;
+                    border: solid 4px $textcolor;
+                    width: 430px;
+                    margin-bottom: 40px;
+                }
+    
+            .heartwrapper2{
+                position: relative;
+                #heart4{
+                    position: absolute;
+                    
+            
+                }
+    
+                #heart5{
+                    position: absolute;
+                   bottom: 5px;
+                   left: -30px;
+                    
+                }
+    
+                #heart6{
+                    position: absolute;
+                    transform: scaleX(-1);
+                    bottom: 5px;
+                    right: 5px;
+                   
+                }
+
+                #undermain{
+                    position: absolute;
+                    bottom: -85px;
+                }
     }
 }
 
-.desktopVersion{
-    display: block;
+
+
+
+    }
 }
-.mobileVersion{
-    display: none;
-}
+
+    
+    
+
+
+
+
+
+
 
 
 

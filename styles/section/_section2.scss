@@ -1,4 +1,4 @@
-@media screen and (max-width: 430px){
+/*@media screen and (max-width: 430px){
     .desktopVersion{
         display: none;
     }
@@ -164,6 +164,423 @@
 
 
 
+
+
+    }*/
+
+    .AboutMe{
+        color: $textcolor;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 20px;
+        margin-right: auto;
+        margin-left:auto;
+        .TopSection{
+            
+            .flower1{
+                height: 210px;
+                width: 210px;
+                position: absolute;
+                left: 20px;
+                top: 170px;
+            }
+            .flower2{
+                height: 300px;
+                width: 300px;
+                right: -15px;
+                top: 550px;
+                position: absolute;
+            }
+            .cloud1{
+                margin-top: 100px;
+                margin-left: 325px;
+                margin-right: auto;
+                
+                img{
+                    
+                    height: 500px;
+                    width: 700px;
+                    //position: absolute;
+                }
+                p{
+                    text-align: center;
+                    position: absolute;
+                    
+                    left: 425px;
+                    top: 420px;
+                    width: 500px;
+                }
+            }
+    
+            .arrow1{
+                position: absolute;
+                left: 200px;
+                top: 500px;
+            }
+        }
+    }
+    
+    .middleSection{
+        position: relative;
+        .yellow{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            left: -50px;
+            top: -100px;
+            z-index: 1;
+        }
+        .CV{
+            margin-left: 50px;
+            margin-top: 150px;
+            width: 600px;
+            height: 700px;
+            border: $textcolor 10px solid;
+            background-color: $textboxColor;
+            position: relative;
+            .embedPDF{
+                position: absolute;
+                //width: 500;
+                //height: 700;
+                top: 40px;
+                left: 40px;
+            }
+        }
+    
+        .image{
+            height: 500px;
+            width: 500px;
+            //border-radius: 40px;
+            position: absolute;
+            top: 40px;
+            right: 50px;
+            img{
+                border-radius: 20%;
+            }
+        }
+    }
+    
+    
+    .bottomsection{
+        margin-right: auto;
+        margin-left: auto;
+        color: $textcolor;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 20px;
+        .cloudandcat{
+            p{
+                position: absolute;
+                width: 300px;
+                text-align: center;
+                left: 880px;
+                top: 1800px;
+            }
+            #cloudcool{
+                height: 600px;
+                width: 600px;
+                margin-left: 750px;
+                //margin-top: px;
+            }
+            #catbody{
+                position: absolute;
+                z-index: -1;
+                left: 1020px;
+                top: 1460px;
+                width: 175px;
+                height: 300px;
+            }
+            #catarms{
+                position: absolute;
+                left: 960px;
+                top: 1620px;
+                width: 300px;
+            }
+        }
+    
+        .finalflower{
+            height: 260px;
+            width: 260px;
+            position: absolute;
+            bottom: -1500px;
+            left: 50px;  
+        }
+    
+        .socials{
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin-bottom: 30px;
+            .social1{
+                background-color: $textcolor;
+                width: 100px;
+                height: 100px;
+            }
+            .social2{
+                background-color: $textcolor;
+                width: 100px;
+                height: 100px;
+            }
+            .social3{
+                background-color: $textcolor;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    
+        .socialsandarrow{
+            position: relative;
+            #socialsDoodle{
+                position: absolute;
+                bottom: 200px;
+                left: 100px;
+            }
+    
+            #arrow{
+                position: absolute;
+                bottom: 100px;
+                left: 300px;
+            }
+        }
+    }
+
+
+
+    @media screen and (max-width: 430px){
+
+        .navigation{
+            
+            //background-color: $navColor;
+            width: 430px;
+            .logo{
+                #logo{
+                height: 50px;
+                width: 50px;
+                }
+            }
+
+        ._navlinks{
+            display: none;
+        }
+
+        #name{
+            display: none;
+        }
+
+        .hamburgermenu{
+            display: block
+        }
+    }
+
+        .AboutMe{
+            
+            .TopSection{
+                position: relative;
+                
+                   .arrow1{
+                    display: none;
+                   }
+                   .flower2{
+                    display: none;
+                   }
+                   
+                .flower1{
+                    position: absolute;
+                    height: 120px;
+                    width: 120px;
+                    left: -3px;
+                    top: 1000px;
+                    z-index: 1;
+                }
+    
+               
+    
+                .cloud1{
+                    position: relative;
+                    #text1{
+                        position: absolute;
+                        padding: 30px;
+                        background-color: $headerTXTColor;
+                        z-index: 3;
+                        top: 270px;
+                       left: -270px;
+                        font-size: 15px;
+                        color: $textcolor;
+                        font-family: "Merriweather Sans", sans-serif;
+                        text-align: center;
+                        width: 300px;
+                        border-radius: 20%;
+                        border: solid 8px $textboxColor;
+                        
+                    }
+
+                    #CloudImage{
+                        display: none;
+                       }
+    
+                   
+    
+                }
+    
+    
+               
+            }
+        }
+
+
+        .middleSection{
+            //position: relative;
+            #iF{
+                display: none;
+            }
+
+
+            .yellow{
+                height: 150px;
+                width: 150px;
+                position: absolute;
+                left: 300px;
+                top: -150px;
+                z-index: 1;
+            }
+            .CV{
+                //margin-left: 50px;
+                margin-top: 150px;
+                width: 600px;
+                height: 450px;
+                border: $textcolor 10px solid;
+                background-color: $textboxColor;
+                position: relative;
+                left: -100px;
+                top: 500px;
+                margin-bottom: 30px;
+                .embedPDF{
+                    position: absolute;
+                    //width: 500;
+                    //height: 700;
+                    top: 40px;
+                    left: 40px;
+
+                    #clickable{
+                        position: absolute;
+                        background-color: $headerTXTColor;
+                        //padding: 30px;
+                        left: 140px;
+                        top: 300px;
+                        border: solid 4px $textcolor;
+                        width: 150px;
+                        height: 50px;
+                        font-family: "Gluten", sans-serif;
+                        color: $textcolor;
+                        text-align: center;
+                        padding: 15px;
+
+                        
+                    }
+
+                    #PDFImage{
+                        position: relative;
+                        left: 60px;
+                        width: 300px;
+                        height: 300px;
+                        top: -20px;
+                    }
+                }
+            }
+        
+            .image{
+                height: 300px;
+                width: 300px;
+                //border-radius: 40px;
+                position: absolute;
+                top: -90px;
+                left: 60px;
+                
+                img{
+                    border-radius: 80%;
+                }
+            }
+        }
+
+
+
+        .bottomsection{
+            margin-right: auto;
+            margin-left: auto;
+            color: $textcolor;
+            font-family: 'Merriweather Sans', sans-serif;
+            font-size: 20px;
+
+            .socialsandarrow{
+                display: none;
+            }
+            #cloudcool{
+                display: none;
+            }
+
+            #text2{
+                left: 20px;
+            }
+
+            #catbody{
+                display: none;
+            }
+            #catarms{
+                display: none;
+            }
+           
+            .cloudandcat{
+                position: relative;
+                p{
+                    position: absolute;
+                    width: 400px;
+                    text-align: center;
+                    
+                    background-color: $headerTXTColor;
+                    border-radius: 20%;
+                    padding: 30px;
+                    top: 550px;
+                    margin-left: -3px;
+                   border: solid 8px $textboxColor;
+                   padding-bottom: 30px;
+                   
+                    
+                }
+                
+               
+            }
+        
+            .finalflower{
+                display: none;
+            }
+        
+            .socials{
+                display: flex;
+                gap: 40px;
+                justify-content: center;
+                margin-bottom: 30px;
+                position: absolute;
+                bottom: -1350px;
+                left: 25px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+                .social1{
+                    background-color: $textcolor;
+                    width: 100px;
+                    height: 100px;
+                }
+                .social2{
+                    background-color: $textcolor;
+                    width: 100px;
+                    height: 100px;
+                }
+                .social3{
+                    background-color: $textcolor;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        
+            
+        }
 
 
     }
