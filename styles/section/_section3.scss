@@ -30,7 +30,13 @@
         text-align: center;
         margin-top: 150px;
         
+       }
+
+       .project1, .project2, .project3{
+        transition: .2s ease-in;
     }
+        
+    
 
     .SecondBit{
         display: none;

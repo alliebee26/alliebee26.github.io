@@ -23,13 +23,11 @@ li, button, a{
         color: inherit;
         }
 
-        a:hover{
-            
-            
-        }
+        
        
         .hamburgermenu{
             display: none;
+            
            
         }
 
@@ -61,8 +59,37 @@ li, button, a{
             padding: 25px;
             margin: 20px;
             gap:30px;
+
+            a{
+                position: relative;
+                img{
+                    width: 100%;
+                    position: absolute;
+                    bottom: -40px;
+                    left: 0;
+                    //display: none;
+                    clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+                    transition: clip-path .3s ease;
+
+                   
+                }
+
+                #contact{
+                    height: 40px;
+                }
+
+                
+                &:hover, &:focus{
+                    img{
+                        display: block;
+                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                        
+                        }
+                    }
             
         }
+    }
+
         
 
         .logo{
@@ -176,20 +203,17 @@ li, button, a{
 
     @media screen and (max-width: 430px){
         .navigation{
-            
-                //background-color: $navColor;
-                width: 430px;
+            width: 430px;
+            //position: relative;
                 .logo{
                     #logo{
                     height: 50px;
                     width: 50px;
                     }
                 }
-    
-            ._navlinks{
-                display: none;
-                
-            }
+            
+                background-color: $navColor;
+                position: relative;
 
             #name{
                 display: none;
@@ -201,7 +225,10 @@ li, button, a{
             }
 
             
-   
+            
+
+
+        
 
             
         }

@@ -233,7 +233,7 @@
             margin-left: 50px;
             margin-top: 150px;
             width: 600px;
-            height: 700px;
+            height: 750px;
             border: $textcolor 10px solid;
             background-color: $textboxColor;
             position: relative;
@@ -243,6 +243,26 @@
                 //height: 700;
                 top: 40px;
                 left: 40px;
+            }
+            #PDFImage{
+                display: none;
+            }
+
+            #clickable{
+                position: absolute;
+                background-color: $headerTXTColor;
+                //padding: 30px;
+                left: 180px;
+                top: 620px;
+                border: solid 4px $textcolor;
+                width: 150px;
+                height: 50px;
+                font-family: "Gluten", sans-serif;
+                color: $textcolor;
+                text-align: center;
+                padding: 15px;
+
+                
             }
         }
     
@@ -272,7 +292,7 @@
                 width: 300px;
                 text-align: center;
                 left: 880px;
-                top: 1800px;
+                top: 1850px;
             }
             #cloudcool{
                 height: 600px;
@@ -330,7 +350,7 @@
             position: relative;
             #socialsDoodle{
                 position: absolute;
-                bottom: 200px;
+                bottom: 250px;
                 left: 100px;
             }
     
