@@ -142,3 +142,67 @@
         }
     }
 }
+
+.slideshow1{
+    display: none;
+}
+.slideshow2{
+    display: none;
+}
+
+
+@media screen and (max-width: 430px){
+
+        .ParentProjects{
+            display: none;
+        }
+
+        .slideshow1, .slideshow2{
+            display: block;
+        }
+    
+
+        .title{
+            font-family: "Gluten", sans-serif;
+            color: $textcolor;
+            background-color: $textboxColor;
+            padding: 10px;
+            border: solid 4px $textcolor;
+            
+        }
+
+        .slideshow1{
+            display: block;
+            display: grid;
+            .slide{
+                
+                padding: 30px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: $textboxColor;
+
+                a{
+                    display: none;
+                }
+            }
+        }
+
+        .slideshow2{
+            .slide1{
+
+            }
+            .slide2{
+
+            }
+            .slide3{
+
+            }
+            .slide4{
+
+            }
+        }
+    
+    
+
+
+}

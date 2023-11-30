@@ -10,3 +10,21 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     hamburgermenu.classList.remove("active");
     navigation.classList.remove("active");
 }))
+
+
+
+$(document).ready(function(){ //when it's fully loaded I want it to do something
+    $('.slideshow1').slick({
+        slidesToShow: 4, //separated by commas
+        slidesToScroll: 1
+    });
+    
+  });
+
+  $(document).ready(function(){ //when it's fully loaded I want it to do something
+    $('.slideshow2').slick({
+        slidesToShow: 4, //separated by commas
+        slidesToScroll: 1
+    });
+    
+  });

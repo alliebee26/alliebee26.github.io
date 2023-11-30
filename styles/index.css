@@ -898,4 +898,41 @@ li, button, a {
   background-color: #F2AEBB;
   height: 400px;
   width: 300px;
+}
+
+.slideshow1 {
+  display: none;
+}
+
+.slideshow2 {
+  display: none;
+}
+
+@media screen and (max-width: 430px) {
+  .ParentProjects {
+    display: none;
+  }
+  .slideshow1, .slideshow2 {
+    display: block;
+  }
+  .title {
+    font-family: "Gluten", sans-serif;
+    color: #BF045B;
+    background-color: #F2AEBB;
+    padding: 10px;
+    border: solid 4px #BF045B;
+  }
+  .slideshow1 {
+    display: block;
+    display: grid;
+  }
+  .slideshow1 .slide {
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #F2AEBB;
+  }
+  .slideshow1 .slide a {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
