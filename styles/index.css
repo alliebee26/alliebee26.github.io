@@ -636,17 +636,23 @@ li, button, a {
 }
 .ParentProjects .set1 .project1:hover, .ParentProjects .set1 .project2:hover, .ParentProjects .set1 .project3:hover {
   background-color: #BF045B;
-  opacity: 70%;
+  opacity: 80%;
 }
 .ParentProjects .set1 .project1:hover .Robots, .ParentProjects .set1 .project2:hover .Robots, .ParentProjects .set1 .project3:hover .Robots {
-  display: block;
+  opacity: 100%;
   color: #F5F4EC;
+  background-color: #BF045B;
+  padding: 10px;
+  transition: opacity 0.2s;
 }
 .ParentProjects .set1 .project1:hover .SecondBit, .ParentProjects .set1 .project2:hover .SecondBit, .ParentProjects .set1 .project3:hover .SecondBit {
-  display: block;
+  opacity: 100%;
+  background-color: #BF045B;
+  padding: 5px;
+  transition: opacity 0.2s;
 }
 .ParentProjects .set1 .Robots {
-  display: none;
+  opacity: 0;
   text-align: center;
   margin-top: 150px;
 }
@@ -654,12 +660,12 @@ li, button, a {
   transition: 0.2s ease-in;
 }
 .ParentProjects .set1 .SecondBit {
-  display: none;
+  opacity: 0;
   font-size: 20px;
   color: #F5F4EC;
   text-align: center;
 }
-.ParentProjects .set1 .title1 {
+.ParentProjects .set1 .title {
   background-color: #F2AEBB;
   width: 1200px;
   height: 60px;
@@ -671,16 +677,26 @@ li, button, a {
   height: 400px;
   width: 300px;
   margin-left: 100px;
+  position: relative;
+  background-image: url("/Images/WallE-2.png");
+  background-size: 100% 100%;
+  border: solid 8px #BF045B;
 }
 .ParentProjects .set1 .project2 {
   background-color: #F2AEBB;
   height: 400px;
   width: 300px;
+  background-image: url("/Images/Test3.jpg");
+  background-size: 100% 100%;
+  border: solid 8px #BF045B;
 }
 .ParentProjects .set1 .project3 {
   background-color: #F2AEBB;
   height: 400px;
   width: 300px;
+  background-image: url("/Images/AllieBlue.GirlBossPP.jpg");
+  background-size: 100% 100%;
+  border: solid 8px #BF045B;
 }
 .ParentProjects .set2 {
   display: flex;
@@ -688,7 +704,7 @@ li, button, a {
   gap: 50px;
   margin-bottom: 50px;
 }
-.ParentProjects .set2 .title2 {
+.ParentProjects .set2 .title {
   background-color: #F2AEBB;
   width: 1200px;
   height: 60px;
@@ -716,7 +732,7 @@ li, button, a {
   gap: 50px;
   margin-bottom: 50px;
 }
-.ParentProjects .set3 .title3 {
+.ParentProjects .set3 .title {
   background-color: #F2AEBB;
   width: 1200px;
   height: 60px;
@@ -740,14 +756,53 @@ li, button, a {
 }
 
 @media screen and (max-width: 430px) {
-  .set1 {
-    position: relative;
-  }
-  .set1 .title1 {
+  .title {
     font-size: 20px;
-    width: 0;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    background-color: #F2AEBB;
   }
-  .set1 .project1 {
-    left: 0;
+  .ParentProjects {
+    margin-left: 0;
+  }
+  .ParentProjects .set1 .Robots {
+    display: block;
+    margin-top: 0px;
+    font-size: 20px;
+    color: #BF045B;
+    background-color: #F5F4EC;
+    padding: 5px;
+    opacity: 100%;
+    margin-top: 100px;
+  }
+  .ParentProjects .set1 .SecondBit {
+    font-size: 14px;
+    color: #BF045B;
+    background-color: #F5F4EC;
+    padding: 5px;
+    margin-top: -1px;
+    opacity: 100%;
+  }
+  .ParentProjects .set1 .project1 {
+    margin-left: 115px;
+    height: 300px;
+    width: 200px;
+  }
+  .ParentProjects .set1 .project2, .ParentProjects .set1 .project3 {
+    margin-left: 115px;
+    height: 300px;
+    width: 200px;
+  }
+  .ParentProjects .set2 .project4, .ParentProjects .set2 .project5, .ParentProjects .set2 .project6 {
+    height: 300px;
+    width: 200px;
+    margin-left: 115px;
+    transition: none;
+  }
+  .ParentProjects .set3 .project7, .ParentProjects .set3 .project8, .ParentProjects .set3 .project9 {
+    height: 300px;
+    width: 200px;
+    margin-left: 115px;
   }
 }/*# sourceMappingURL=index.css.map */
