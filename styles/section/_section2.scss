@@ -1,174 +1,6 @@
-/*@media screen and (max-width: 430px){
-    .desktopVersion{
-        display: none;
-    }
-    .mobileVersion{
-        display: block;
-    }
-
-    .homepage{
-        .nav{
-            background-color: $navColor;
-            padding: 20px;
-            display: flex;
-            .logo2{
-                height: 50px;
-                width: 50px;
-                //margin: auto;
-                justify-content: space-between;
-            }
-
-            .hamburger{
-                margin-left: 300px;
-                color: green;
-            }
-
-        }
-
-        .bodysection{
-            display: flex;
-            flex-flow: column wrap;
-            margin-top: 50px;
-            .animalcharacter{
-                border: solid 4px $textcolor;
-                border-radius: 40px;
-                background-color: $textboxColor;
-                margin-left: 60px;
-                width: 300px;
-                height: 275px;
-                gap: 40px;
-            img{
-                width: 360px;
-                height: 290px;
-                position: absolute;
-
-            }
-            }
-
-            .textwrapper{
-                text-align: center;
-                display: flex;  
-                margin-top: 15px;
-                gap: 30px;
-                
-                .text1{
-                    
-                    font-weight: 700;
-                    font-size: 15px;
-                    padding: 20px;
-                    border: solid 4px $textcolor;
-                    width: 430px;
-                    
-                }
-                .text2{
-                    font-family: 'Gluten', sans-serif;
-                    background-color: $textboxColor;
-                    font-size: 20px;
-                    padding: 60px;
-                    border: solid 4px $textcolor;
-                    width: 430px;
-                    margin-bottom: 40px;
-                }
-    
-            .heartwrapper2{
-                position: relative;
-                #heart4{
-                    position: absolute;
-                    
-            
-                }
-    
-                #heart5{
-                    position: absolute;
-                   bottom: 5px;
-                   left: -30px;
-                    
-                }
-    
-                #heart6{
-                    position: absolute;
-                    transform: scaleX(-1);
-                    bottom: 5px;
-                    right: 5px;
-                   
-                }
-
-                #undermain{
-                    position: absolute;
-                    bottom: -85px;
-                }
-            }
-        }
-        }
-    }
-
-    .divider1{
-        background-color: $navColor;
-        margin: auto;
-        padding: 40px;
-        p{
-            font-size: 30px;
-            font-family: 'Gluten', sans-serif;
-            color: $headerTXTColor;
-            text-align: center;
-        }
-    }
-
-    .AboutME{
-        .TopSection{
-            position: relative;
-            .flower1{
-                position: absolute;
-                height: 150px;
-                width: 150px;
-                right: -20px;
-                top: -50px;
-            }
-
-           
-
-            .cloud1{
-                position: relative;
-                .firsttxt{
-                    padding: 30px;
-                    background-color: $headerTXTColor;
-                    z-index: -1;
-                    position: absolute;
-                    
-                    p{
-                    font-size: 15px;
-                    color: $textcolor;
-                    font-family: "Merriweather Sans", sans-serif;
-                    text-align: center;
-                    }
-                }
-
-                img{
-                    width: 320px;
-                    height: 320px;
-                    border-radius: 30%;
-                    margin: auto;
-                    z-index: -2;
-                }
-
-            }
-
-
-            .flower2{
-
-            }
-        }
-    }
-
-
-
-
-
-
-
-    }*/
-
-    .AboutMe{
+ 
+ 
+ .AboutMe{
         color: $textcolor;
         font-family: 'Merriweather Sans', sans-serif;
         font-size: 20px;
@@ -366,30 +198,6 @@
 
     @media screen and (max-width: 430px){
 
-        .navigation{
-            
-            //background-color: $navColor;
-            width: 430px;
-            .logo{
-                #logo{
-                height: 50px;
-                width: 50px;
-                }
-            }
-
-        ._navlinks{
-            display: none;
-        }
-
-        #name{
-            display: none;
-        }
-
-        .hamburgermenu{
-            display: block
-        }
-    }
-
         .AboutMe{
             
             .TopSection{
@@ -422,6 +230,7 @@
                         z-index: 3;
                         top: 270px;
                        left: -270px;
+                       //margin-inline: auto;
                         font-size: 15px;
                         color: $textcolor;
                         font-family: "Merriweather Sans", sans-serif;
@@ -457,19 +266,20 @@
                 height: 150px;
                 width: 150px;
                 position: absolute;
-                left: 300px;
+                //left: 300px;
                 top: -150px;
                 z-index: 1;
+                //overflow: hidden;
             }
             .CV{
                 //margin-left: 50px;
                 margin-top: 150px;
-                width: 600px;
+                width: 350px;
                 height: 450px;
                 border: $textcolor 10px solid;
                 background-color: $textboxColor;
                 position: relative;
-                left: -100px;
+                left: -8px;
                 top: 500px;
                 margin-bottom: 30px;
                 .embedPDF{
@@ -483,8 +293,8 @@
                         position: absolute;
                         background-color: $headerTXTColor;
                         //padding: 30px;
-                        left: 140px;
-                        top: 300px;
+                        left: 50px;
+                        top: 320px;
                         border: solid 4px $textcolor;
                         width: 150px;
                         height: 50px;
@@ -497,11 +307,13 @@
                     }
 
                     #PDFImage{
+                        display: block;
                         position: relative;
-                        left: 60px;
+                        left: -15px;
                         width: 300px;
                         height: 300px;
                         top: -20px;
+                        
                     }
                 }
             }
@@ -578,7 +390,7 @@
                 justify-content: center;
                 margin-bottom: 30px;
                 position: absolute;
-                bottom: -1350px;
+                bottom: -900px;
                 left: 25px;
                 padding-bottom: 30px;
                 padding-top: 30px;

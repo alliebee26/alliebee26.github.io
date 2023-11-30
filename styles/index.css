@@ -55,15 +55,24 @@ li, button, a {
 .navigation .hamburgermenu {
   display: none;
 }
+@media screen and (max-width: 430px) {
+  .navigation .hamburgermenu {
+    border: transparent solid 1px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 101;
+    position: relative;
+  }
+}
 .navigation .bar {
   position: relative;
   display: block;
   width: 40px;
   height: 7px;
-  margin: 10px auto;
   background-color: #F5F4EC;
-  margin-right: 30px;
-  top: 10px;
 }
 .navigation #logo {
   width: 75px;
@@ -190,6 +199,10 @@ li, button, a {
     width: 430px;
     background-color: #8FD1D9;
     position: relative;
+    /*.hamburgermenu{
+        display: block;
+        cursor: pointer;
+    }*/
   }
   .navigation .logo #logo {
     height: 50px;
@@ -198,9 +211,19 @@ li, button, a {
   .navigation #name {
     display: none;
   }
-  .navigation .hamburgermenu {
-    display: block;
-    cursor: pointer;
+  .navigation ._navlinks {
+    position: absolute;
+    width: 100%;
+    top: -350%;
+    left: 0;
+    background-color: #8FD1D9;
+    margin: 0;
+    flex-direction: column;
+    z-index: 4;
+    transition: top ease 0.3s;
+  }
+  .navigation ._navlinks.active {
+    top: 0;
   }
   .bodysection {
     display: flex;
@@ -226,13 +249,14 @@ li, button, a {
     display: flex;
     margin-top: 15px;
     gap: 30px;
+    width: 90%;
+    margin-inline: auto;
   }
   .bodysection .textwrapper .text1 {
     font-weight: 700;
     font-size: 15px;
     padding: 20px;
     border: solid 4px #BF045B;
-    width: 430px;
   }
   .bodysection .textwrapper .text2 {
     font-family: "Gluten", sans-serif;
@@ -240,7 +264,6 @@ li, button, a {
     font-size: 20px;
     padding: 60px;
     border: solid 4px #BF045B;
-    width: 430px;
     margin-bottom: 40px;
   }
   .bodysection .textwrapper .heartwrapper2 {
@@ -265,175 +288,6 @@ li, button, a {
     bottom: -85px;
   }
 }
-/*@media screen and (max-width: 430px){
-    .desktopVersion{
-        display: none;
-    }
-    .mobileVersion{
-        display: block;
-    }
-
-    .homepage{
-        .nav{
-            background-color: $navColor;
-            padding: 20px;
-            display: flex;
-            .logo2{
-                height: 50px;
-                width: 50px;
-                //margin: auto;
-                justify-content: space-between;
-            }
-
-            .hamburger{
-                margin-left: 300px;
-                color: green;
-            }
-
-        }
-
-        .bodysection{
-            display: flex;
-            flex-flow: column wrap;
-            margin-top: 50px;
-            .animalcharacter{
-                border: solid 4px $textcolor;
-                border-radius: 40px;
-                background-color: $textboxColor;
-                margin-left: 60px;
-                width: 300px;
-                height: 275px;
-                gap: 40px;
-            img{
-                width: 360px;
-                height: 290px;
-                position: absolute;
-
-            }
-            }
-
-            .textwrapper{
-                text-align: center;
-                display: flex;  
-                margin-top: 15px;
-                gap: 30px;
-
-                .text1{
-
-                    font-weight: 700;
-                    font-size: 15px;
-                    padding: 20px;
-                    border: solid 4px $textcolor;
-                    width: 430px;
-
-                }
-                .text2{
-                    font-family: 'Gluten', sans-serif;
-                    background-color: $textboxColor;
-                    font-size: 20px;
-                    padding: 60px;
-                    border: solid 4px $textcolor;
-                    width: 430px;
-                    margin-bottom: 40px;
-                }
-
-            .heartwrapper2{
-                position: relative;
-                #heart4{
-                    position: absolute;
-
-
-                }
-
-                #heart5{
-                    position: absolute;
-                   bottom: 5px;
-                   left: -30px;
-
-                }
-
-                #heart6{
-                    position: absolute;
-                    transform: scaleX(-1);
-                    bottom: 5px;
-                    right: 5px;
-
-                }
-
-                #undermain{
-                    position: absolute;
-                    bottom: -85px;
-                }
-            }
-        }
-        }
-    }
-
-    .divider1{
-        background-color: $navColor;
-        margin: auto;
-        padding: 40px;
-        p{
-            font-size: 30px;
-            font-family: 'Gluten', sans-serif;
-            color: $headerTXTColor;
-            text-align: center;
-        }
-    }
-
-    .AboutME{
-        .TopSection{
-            position: relative;
-            .flower1{
-                position: absolute;
-                height: 150px;
-                width: 150px;
-                right: -20px;
-                top: -50px;
-            }
-
-
-
-            .cloud1{
-                position: relative;
-                .firsttxt{
-                    padding: 30px;
-                    background-color: $headerTXTColor;
-                    z-index: -1;
-                    position: absolute;
-
-                    p{
-                    font-size: 15px;
-                    color: $textcolor;
-                    font-family: "Merriweather Sans", sans-serif;
-                    text-align: center;
-                    }
-                }
-
-                img{
-                    width: 320px;
-                    height: 320px;
-                    border-radius: 30%;
-                    margin: auto;
-                    z-index: -2;
-                }
-
-            }
-
-
-            .flower2{
-
-            }
-        }
-    }
-
-
-
-
-
-
-
-    }*/
 .AboutMe {
   color: #BF045B;
   font-family: "Merriweather Sans", sans-serif;
@@ -605,22 +459,6 @@ li, button, a {
 }
 
 @media screen and (max-width: 430px) {
-  .navigation {
-    width: 430px;
-  }
-  .navigation .logo #logo {
-    height: 50px;
-    width: 50px;
-  }
-  .navigation ._navlinks {
-    display: none;
-  }
-  .navigation #name {
-    display: none;
-  }
-  .navigation .hamburgermenu {
-    display: block;
-  }
   .AboutMe .TopSection {
     position: relative;
   }
@@ -666,18 +504,17 @@ li, button, a {
     height: 150px;
     width: 150px;
     position: absolute;
-    left: 300px;
     top: -150px;
     z-index: 1;
   }
   .middleSection .CV {
     margin-top: 150px;
-    width: 600px;
+    width: 350px;
     height: 450px;
     border: #BF045B 10px solid;
     background-color: #F2AEBB;
     position: relative;
-    left: -100px;
+    left: -8px;
     top: 500px;
     margin-bottom: 30px;
   }
@@ -689,8 +526,8 @@ li, button, a {
   .middleSection .CV .embedPDF #clickable {
     position: absolute;
     background-color: #F5F4EC;
-    left: 140px;
-    top: 300px;
+    left: 50px;
+    top: 320px;
     border: solid 4px #BF045B;
     width: 150px;
     height: 50px;
@@ -700,8 +537,9 @@ li, button, a {
     padding: 15px;
   }
   .middleSection .CV .embedPDF #PDFImage {
+    display: block;
     position: relative;
-    left: 60px;
+    left: -15px;
     width: 300px;
     height: 300px;
     top: -20px;
@@ -762,7 +600,7 @@ li, button, a {
     justify-content: center;
     margin-bottom: 30px;
     position: absolute;
-    bottom: -1350px;
+    bottom: -900px;
     left: 25px;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -798,6 +636,7 @@ li, button, a {
 }
 .ParentProjects .set1 .project1:hover, .ParentProjects .set1 .project2:hover, .ParentProjects .set1 .project3:hover {
   background-color: #BF045B;
+  opacity: 70%;
 }
 .ParentProjects .set1 .project1:hover .Robots, .ParentProjects .set1 .project2:hover .Robots, .ParentProjects .set1 .project3:hover .Robots {
   display: block;
@@ -900,39 +739,15 @@ li, button, a {
   width: 300px;
 }
 
-.slideshow1 {
-  display: none;
-}
-
-.slideshow2 {
-  display: none;
-}
-
 @media screen and (max-width: 430px) {
-  .ParentProjects {
-    display: none;
+  .set1 {
+    position: relative;
   }
-  .slideshow1, .slideshow2 {
-    display: block;
+  .set1 .title1 {
+    font-size: 20px;
+    width: 0;
   }
-  .title {
-    font-family: "Gluten", sans-serif;
-    color: #BF045B;
-    background-color: #F2AEBB;
-    padding: 10px;
-    border: solid 4px #BF045B;
-  }
-  .slideshow1 {
-    display: block;
-    display: grid;
-  }
-  .slideshow1 .slide {
-    padding: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #F2AEBB;
-  }
-  .slideshow1 .slide a {
-    display: none;
+  .set1 .project1 {
+    left: 0;
   }
 }/*# sourceMappingURL=index.css.map */

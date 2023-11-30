@@ -13,6 +13,7 @@
         margin-bottom: 50px;
         .project1:hover, .project2:hover, .project3:hover{
             background-color: $textcolor;
+            opacity: 70%;
             .Robots{
                 display: block;
                 color: $headerTXTColor;
@@ -143,64 +144,32 @@
     }
 }
 
-.slideshow1{
-    display: none;
-}
-.slideshow2{
-    display: none;
-}
+
 
 
 @media screen and (max-width: 430px){
 
-        .ParentProjects{
-            display: none;
-        }
+        
 
-        .slideshow1, .slideshow2{
-            display: block;
+        .set1{
+            position: relative;
+            .title1{
+                font-size: 20px;
+                width: 0;
+                
+            }
+            .project1{
+                left: 0;
+            }
+            .project2, .project3{
+
+            }
         }
     
 
-        .title{
-            font-family: "Gluten", sans-serif;
-            color: $textcolor;
-            background-color: $textboxColor;
-            padding: 10px;
-            border: solid 4px $textcolor;
-            
-        }
+        
 
-        .slideshow1{
-            display: block;
-            display: grid;
-            .slide{
-                
-                padding: 30px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                background-color: $textboxColor;
-
-                a{
-                    display: none;
-                }
-            }
-        }
-
-        .slideshow2{
-            .slide1{
-
-            }
-            .slide2{
-
-            }
-            .slide3{
-
-            }
-            .slide4{
-
-            }
-        }
+       
     
     
 
