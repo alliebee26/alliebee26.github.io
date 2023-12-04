@@ -209,6 +209,37 @@ li, button, a{
         }
     }
 
+    .footer{
+        background-color: $navColor;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        img{
+            width: 75px;
+            height:75px;
+            margin: auto;
+            
+        }
+    }
+
+    .footer2{
+        background-color: $navColor;
+        padding: 20px;
+        position: absolute;
+        top: 2350px;
+        width: 100%;
+        img{
+            width: 75px;
+            height:75px;
+            margin: auto;
+            
+        }
+
+      
+    }
+
+
 
     @media screen and (max-width: 430px){
         .navigation{
@@ -340,6 +371,20 @@ li, button, a{
 
 
 
+    }
+
+    .footer2{
+        background-color: $navColor;
+        padding: 20px;
+        position: absolute;
+        top: 1687px;
+        width: 100%;
+        img{
+            width: 75px;
+            height:75px;
+            margin: auto;
+            
+        }
     }
 }
 

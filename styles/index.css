@@ -194,6 +194,32 @@ li, button, a {
   left: 15px;
 }
 
+.footer {
+  background-color: #8FD1D9;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer img {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+}
+
+.footer2 {
+  background-color: #8FD1D9;
+  padding: 20px;
+  position: absolute;
+  top: 2350px;
+  width: 100%;
+}
+.footer2 img {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+}
+
 @media screen and (max-width: 430px) {
   .navigation {
     width: 430px;
@@ -286,6 +312,18 @@ li, button, a {
   .bodysection .textwrapper .heartwrapper2 #undermain {
     position: absolute;
     bottom: -85px;
+  }
+  .footer2 {
+    background-color: #8FD1D9;
+    padding: 20px;
+    position: absolute;
+    top: 1687px;
+    width: 100%;
+  }
+  .footer2 img {
+    width: 75px;
+    height: 75px;
+    margin: auto;
   }
 }
 .AboutMe {
@@ -420,8 +458,9 @@ li, button, a {
   height: 260px;
   width: 260px;
   position: absolute;
-  bottom: -1500px;
+  bottom: -1400px;
   left: 50px;
+  z-index: 11;
 }
 .bottomsection .socials {
   display: flex;
@@ -429,20 +468,17 @@ li, button, a {
   justify-content: center;
   margin-bottom: 30px;
 }
-.bottomsection .socials .social1 {
-  background-color: #BF045B;
-  width: 100px;
-  height: 100px;
+.bottomsection .socials .social1 a {
+  color: #BF045B;
+  font-size: 100px;
 }
-.bottomsection .socials .social2 {
-  background-color: #BF045B;
-  width: 100px;
-  height: 100px;
+.bottomsection .socials .social2 a {
+  color: #BF045B;
+  font-size: 100px;
 }
-.bottomsection .socials .social3 {
-  background-color: #BF045B;
-  width: 100px;
-  height: 100px;
+.bottomsection .socials .social3 a {
+  color: #BF045B;
+  font-size: 100px;
 }
 .bottomsection .socialsandarrow {
   position: relative;
@@ -601,24 +637,21 @@ li, button, a {
     margin-bottom: 30px;
     position: absolute;
     bottom: -900px;
-    left: 25px;
-    padding-bottom: 30px;
+    left: 40px;
+    padding-bottom: 140px;
     padding-top: 30px;
   }
-  .bottomsection .socials .social1 {
-    background-color: #BF045B;
-    width: 100px;
-    height: 100px;
+  .bottomsection .socials .social1 a {
+    color: #BF045B;
+    font-size: 100px;
   }
-  .bottomsection .socials .social2 {
-    background-color: #BF045B;
-    width: 100px;
-    height: 100px;
+  .bottomsection .socials .social2 a {
+    color: #BF045B;
+    font-size: 100px;
   }
-  .bottomsection .socials .social3 {
-    background-color: #BF045B;
-    width: 100px;
-    height: 100px;
+  .bottomsection .socials .social3 a {
+    color: #BF045B;
+    font-size: 100px;
   }
 }
 .ParentProjects {

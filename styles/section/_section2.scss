@@ -152,8 +152,9 @@
             height: 260px;
             width: 260px;
             position: absolute;
-            bottom: -1500px;
-            left: 50px;  
+            bottom: -1400px;
+            left: 50px; 
+            z-index: 11;
         }
     
         .socials{
@@ -162,19 +163,22 @@
             justify-content: center;
             margin-bottom: 30px;
             .social1{
-                background-color: $textcolor;
-                width: 100px;
-                height: 100px;
+                a{
+                    color: $textcolor;
+                    font-size: 100px;
+                    }
             }
             .social2{
-                background-color: $textcolor;
-                width: 100px;
-                height: 100px;
+                a{
+                color: $textcolor;
+                font-size: 100px;
+                }
             }
             .social3{
-                background-color: $textcolor;
-                width: 100px;
-                height: 100px;
+                a{
+                    color: $textcolor;
+                    font-size: 100px;
+                    }
             }
         }
     
@@ -391,23 +395,26 @@
                 margin-bottom: 30px;
                 position: absolute;
                 bottom: -900px;
-                left: 25px;
-                padding-bottom: 30px;
+                left: 40px;
+                padding-bottom: 140px;
                 padding-top: 30px;
                 .social1{
-                    background-color: $textcolor;
-                    width: 100px;
-                    height: 100px;
+                    a{
+                        color: $textcolor;
+                        font-size: 100px;
+                        }
                 }
                 .social2{
-                    background-color: $textcolor;
-                    width: 100px;
-                    height: 100px;
+                    a{
+                        color: $textcolor;
+                        font-size: 100px;
+                        }
                 }
                 .social3{
-                    background-color: $textcolor;
-                    width: 100px;
-                    height: 100px;
+                    a{
+                        color: $textcolor;
+                        font-size: 100px;
+                        }
                 }
             }
         
