@@ -136,14 +136,14 @@
                 position: absolute;
                 z-index: -1;
                 left: 1020px;
-                top: 1460px;
+                top: 1500px;
                 width: 175px;
                 height: 300px;
             }
             #catarms{
                 position: absolute;
                 left: 960px;
-                top: 1620px;
+                top: 1670px;
                 width: 300px;
             }
         }
@@ -152,7 +152,7 @@
             height: 260px;
             width: 260px;
             position: absolute;
-            bottom: -1400px;
+            bottom: -1500px;
             left: 50px; 
             z-index: 11;
         }
@@ -233,7 +233,7 @@
                         background-color: $headerTXTColor;
                         z-index: 3;
                         top: 270px;
-                       left: -270px;
+                       left: -260px;
                        //margin-inline: auto;
                         font-size: 15px;
                         color: $textcolor;
