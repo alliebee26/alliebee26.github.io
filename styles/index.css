@@ -799,6 +799,9 @@ li, button, a {
     text-align: center;
     background-color: #F2AEBB;
   }
+  .title #test {
+    display: block;
+  }
   .ParentProjects {
     margin-left: 0;
   }
