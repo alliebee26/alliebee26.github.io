@@ -69,6 +69,9 @@
             height: 60px;
             padding: 16px;
             align-self: flex-start;
+            #test{
+                display: none;
+            }
         }
         .project1{
             background-color: $textboxColor;
@@ -192,7 +195,6 @@
         
     .ParentProjects{
         margin-left: 0;
-
 
         
         

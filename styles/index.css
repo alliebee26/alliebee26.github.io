@@ -705,6 +705,9 @@ li, button, a {
   padding: 16px;
   align-self: flex-start;
 }
+.ParentProjects .set1 .title #test {
+  display: none;
+}
 .ParentProjects .set1 .project1 {
   background-color: #F2AEBB;
   height: 400px;
